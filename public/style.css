@@ -1,0 +1,77 @@
+:root {
+	--bg: #0b0f12;
+	--panel: #071018;
+	--text: #c7f0d9;
+	--muted: #71968b;
+	--accent: #3be8a3;
+}
+html,
+body {
+	height: 100%;
+	margin: 0;
+	font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Courier New", monospace;
+	background: linear-gradient(180deg, var(--bg), #041017);
+	color: var(--text);
+}
+.container {
+	max-width: 980px;
+	margin: 28px auto;
+	padding: 20px;
+}
+.header {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+.header h1 {
+	margin: 0;
+	font-size: 20px;
+	color: var(--accent);
+}
+.header .meta {
+	color: var(--muted);
+	font-size: 13px;
+}
+.controls {
+	margin-left: auto;
+}
+button {
+	background: #042a20;
+	border: 1px solid #06382b;
+	color: var(--accent);
+	padding: 8px 12px;
+	border-radius: 6px;
+	cursor: pointer;
+}
+.terminal {
+	background: rgba(0, 0, 0, 0.45);
+	border: 1px solid rgba(75, 100, 90, 0.15);
+	padding: 18px;
+	margin-top: 12px;
+	border-radius: 8px;
+	box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+}
+.prompt {
+	color: var(--muted);
+	margin-bottom: 8px;
+}
+.list {
+	font-size: 14px;
+}
+.row {
+	display: flex;
+	justify-content: space-between;
+	padding: 8px 10px;
+	border-bottom: 1px dashed rgba(100, 140, 120, 0.05);
+}
+.row .ip {
+	color: var(--text);
+}
+.row .time {
+	color: var(--accent);
+}
+.footer {
+	color: var(--muted);
+	margin-top: 10px;
+	font-size: 13px;
+}
